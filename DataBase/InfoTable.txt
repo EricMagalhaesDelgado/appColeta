@@ -1,0 +1,3 @@
+Instr | TraceMode | TraceMode_Values | Detector | Detector_Values | LevelUnit | LevelUnit_Values | FreqStart | FreqStop | bandResolution | Preamp | attenuation | att_auto | sweepPoints | sweepTime
+FSL-6 | :DISPlay:WINDow:TRACe1:MODE | WRIT,AVER,MAXH,MINH |:SENSe:DETector1:FUNCtion | APE,POS,NEG,SAMP,RMS,AVER | :UNIT:POWer | DBM,DBUV,DBUVM | :FREQuency:START | :FREQuency:STOP | :BANDwidth:RESolution | :INPut:GAIN:STATe | :INPut:ATTenuation | :INPut:ATTenuation:AUTO | :SENSe:SWEep:POINTS | SENSe:SWEep:TIME 
+Anritsu | [:SENSe]:AVERage:TYPE | NONE,SCALar,MAXimum,MINimum | ... 
