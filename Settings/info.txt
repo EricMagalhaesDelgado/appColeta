@@ -1,0 +1,23 @@
+<winMain_General>
+<font style="font-size:12;">Aplicação de coleta de dados gerados em monitorações desenvolvida no âmbito dos projetos 3A e RFlook - Processos nºs 53554.000939/2020-26 e 53500.063493/2020-76 - e evoluída no âmbito do Sentinela - Processo nº 53500.004826/2022-97.</font>
+</winMain_General>
+
+
+<winMain_connect>
+<font style="font-size:12;">O modo "<b>CONECTIVIDADE(S)</b>" possibilita a ...</font>
+</winMain_connect>
+
+
+<winMain_task>
+<font style="font-size:12;">O modo "<b>TASK</b>" possibilita a ...</font>
+</winMain_task>
+
+
+<winMain_logger>
+<font style="font-size:12;">O modo "<b>LOGGER</b>" possibilita a ...</font>
+</winMain_logger>
+
+
+<winSettings>
+<font style="font-size:12;">A funcionalidade "CONFIGURAÇÕES" possibilita o ajuste de diversos parâmetros do appColeta, além de atualização de módulos que os suportam, como a biblioteca <b>fiscaliza</b> e a base de dados <b>anateldb</b>.</font>
+</winSettings>
