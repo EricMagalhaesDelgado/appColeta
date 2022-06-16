@@ -18,6 +18,11 @@
 </winMain_logger>
 
 
+<winRFeyeEdit>
+<font style="font-size:12;">A funcionalidade...</font>
+</winRFeyeEdit>
+
+
 <winSettings>
 <font style="font-size:12;">A funcionalidade "CONFIGURAÇÕES" possibilita o ajuste de diversos parâmetros do appColeta, além de atualização de módulos que os suportam, como a biblioteca <b>fiscaliza</b> e a base de dados <b>anateldb</b>.</font>
 </winSettings>
