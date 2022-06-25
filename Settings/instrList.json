@@ -7,12 +7,11 @@
     "IP": "",
     "Port": "COM13",
     "Timeout": 5,
-    "inBuffer": 10,
     "Description": "",
-    "Localhost_Flag": 0,
+    "Localhost_ConnectFlag": 0,
     "Localhost_localIP": "",
     "Localhost_publicIP": "",
-    "Flag": 0
+    "ConnectFlag": 1
   },
   {
     "Family": "GPS",
@@ -22,12 +21,11 @@
     "IP": "192.168.1.8",
     "Port": "11123",
     "Timeout": 5,
-    "inBuffer": 10,
     "Description": "GPS2IP (iOS)",
-    "Localhost_Flag": 0,
+    "Localhost_ConnectFlag": 0,
     "Localhost_localIP": "",
     "Localhost_publicIP": "",
-    "Flag": 0
+    "ConnectFlag": 1
   },
   {
     "Family": "Receptor",
@@ -37,12 +35,11 @@
     "IP": "192.168.30.36",
     "Port": "5025",
     "Timeout": 5,
-    "inBuffer": 10,
     "Description": "",
-    "Localhost_Flag": 0,
+    "Localhost_ConnectFlag": 0,
     "Localhost_localIP": "",
     "Localhost_publicIP": "",
-    "Flag": 0
+    "ConnectFlag": 1
   },
   {
     "Family": "Receptor",
@@ -52,27 +49,25 @@
     "IP": "192.168.1.33",
     "Port": "5555",
     "Timeout": 5,
-    "inBuffer": 10,
     "Description": "",
-    "Localhost_Flag": 0,
+    "Localhost_ConnectFlag": 0,
     "Localhost_localIP": "",
     "Localhost_publicIP": "",
-    "Flag": 0
+    "ConnectFlag": 1
   },
   {
     "Family": "Receptor",
     "Name": "Rohde & Schwarz FSL",
     "Tag": "FSL",
     "Type": "TCPIP Socket",
-    "IP": "192.168.30.33",
-    "Port": "5025",
+    "IP": "127.0.0.1",
+    "Port": "34835",
     "Timeout": 5,
-    "inBuffer": 10,
     "Description": "",
-    "Localhost_Flag": 0,
+    "Localhost_ConnectFlag": 0,
     "Localhost_localIP": "",
     "Localhost_publicIP": "",
-    "Flag": 0
+    "ConnectFlag": 1
   },
   {
     "Family": "Receptor",
@@ -82,26 +77,24 @@
     "IP": "127.0.0.1",
     "Port": "34835",
     "Timeout": 10,
-    "inBuffer": 10,
     "Description": "Modo servidor/cliente. Loopback (127.0.0.1).",
-    "Localhost_Flag": 0,
+    "Localhost_ConnectFlag": 0,
     "Localhost_localIP": "",
     "Localhost_publicIP": "",
-    "Flag": 0
+    "ConnectFlag": 1
   },
   {
     "Family": "Receptor",
     "Name": "Tektronix SA2500",
     "Tag": "SA2500",
     "Type": "TCPIP Socket",
-    "IP": "192.168.48.101",
-    "Port": "34835",
+    "IP": "127.0.0.1",
+    "Port": "34836",
     "Timeout": 10,
-    "inBuffer": 10,
     "Description": "",
-    "Localhost_Flag": 0,
+    "Localhost_ConnectFlag": 0,
     "Localhost_localIP": "",
     "Localhost_publicIP": "",
-    "Flag": 0
+    "ConnectFlag": 1
   }
 ]

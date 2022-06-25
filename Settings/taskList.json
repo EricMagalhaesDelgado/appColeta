@@ -1,22 +1,22 @@
 [
   {
     "Name": "PRD/PMEC 2021",
-    "BitsPerSample": 8,
-    "Duration": 3600,
+    "BitsPerSample": 32,
+    "Duration": 3605,
     "Band": [
       {
         "ThreadID": 1,
-        "Description": "PRD 2021 (Faixa 1 de 14)",
+        "Description": "PRD 2021 (Faixa 1 de 4)",
         "FreqStart": 5.4E+7,
         "FreqStop": 8.8E+7,
         "StepWidth": 50000,
         "Resolution": 100000,
         "RFMode": "Normal",
-        "TraceMode": "ClearWrite",
+        "TraceMode": "MaxHold",
         "Detector": "Average/RMS",
         "LevelUnit": "dBμV",
         "RevisitTime": 10,
-        "IntegrationFactor": 1
+        "IntegrationFactor": 10
       },
       {
         "ThreadID": 2,
@@ -40,11 +40,11 @@
         "StepWidth": 50000,
         "Resolution": 100000,
         "RFMode": "Normal",
-        "TraceMode": "ClearWrite",
+        "TraceMode": "Average",
         "Detector": "Average/RMS",
         "LevelUnit": "dBμV",
         "RevisitTime": 10,
-        "IntegrationFactor": 1
+        "IntegrationFactor": 3
       },
       {
         "ThreadID": 4,
@@ -204,7 +204,7 @@
   },
   {
     "Name": "appColeta HOM_1",
-    "BitsPerSample": 8,
+    "BitsPerSample": 16,
     "Duration": 600,
     "Band": [
       {
@@ -254,7 +254,7 @@
   {
     "Name": "appColeta HOM_2",
     "BitsPerSample": 8,
-    "Duration": 600,
+    "Duration": 300,
     "Band": {
       "ThreadID": 1,
       "Description": "Faixa 1 de 1",
