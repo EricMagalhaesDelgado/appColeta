@@ -253,7 +253,7 @@
   },
   {
     "Name": "appColeta HOM_2",
-    "BitsPerSample": 8,
+    "BitsPerSample": 32,
     "Duration": 300,
     "Band": {
       "ThreadID": 1,
@@ -267,7 +267,7 @@
       "Detector": "Sample",
       "LevelUnit": "dBμV",
       "RevisitTime": 0.1,
-      "IntegrationFactor": 10,
+      "IntegrationFactor": 2,
       "instrIntegrationTime": []
     }
   }
