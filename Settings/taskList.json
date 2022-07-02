@@ -16,8 +16,7 @@
         "Detector": "Average/RMS",
         "LevelUnit": "dBμV",
         "RevisitTime": 10,
-        "IntegrationFactor": 10,
-        "instrIntegrationTime": []
+        "IntegrationFactor": 10
       },
       {
         "ThreadID": 2,
@@ -31,8 +30,7 @@
         "Detector": "Average/RMS",
         "LevelUnit": "dBμV",
         "RevisitTime": 10,
-        "IntegrationFactor": 1,
-        "instrIntegrationTime": []
+        "IntegrationFactor": 1
       },
       {
         "ThreadID": 3,
@@ -46,8 +44,7 @@
         "Detector": "Average/RMS",
         "LevelUnit": "dBμV",
         "RevisitTime": 10,
-        "IntegrationFactor": 3,
-        "instrIntegrationTime": []
+        "IntegrationFactor": 3
       },
       {
         "ThreadID": 4,
@@ -61,8 +58,7 @@
         "Detector": "Average/RMS",
         "LevelUnit": "dBμV",
         "RevisitTime": 10,
-        "IntegrationFactor": 1,
-        "instrIntegrationTime": []
+        "IntegrationFactor": 1
       },
       {
         "ThreadID": 5,
@@ -76,8 +72,7 @@
         "Detector": "Average/RMS",
         "LevelUnit": "dBm",
         "RevisitTime": 3,
-        "IntegrationFactor": 1,
-        "instrIntegrationTime": []
+        "IntegrationFactor": 1
       },
       {
         "ThreadID": 6,
@@ -91,8 +86,7 @@
         "Detector": "Average/RMS",
         "LevelUnit": "dBm",
         "RevisitTime": 10,
-        "IntegrationFactor": 1,
-        "instrIntegrationTime": []
+        "IntegrationFactor": 1
       },
       {
         "ThreadID": 7,
@@ -106,8 +100,7 @@
         "Detector": "Average/RMS",
         "LevelUnit": "dBm",
         "RevisitTime": 10,
-        "IntegrationFactor": 1,
-        "instrIntegrationTime": []
+        "IntegrationFactor": 1
       },
       {
         "ThreadID": 8,
@@ -121,8 +114,7 @@
         "Detector": "Average/RMS",
         "LevelUnit": "dBm",
         "RevisitTime": 10,
-        "IntegrationFactor": 1,
-        "instrIntegrationTime": []
+        "IntegrationFactor": 1
       },
       {
         "ThreadID": 9,
@@ -136,8 +128,7 @@
         "Detector": "Average/RMS",
         "LevelUnit": "dBm",
         "RevisitTime": 10,
-        "IntegrationFactor": 1,
-        "instrIntegrationTime": []
+        "IntegrationFactor": 1
       },
       {
         "ThreadID": 10,
@@ -151,8 +142,7 @@
         "Detector": "Average/RMS",
         "LevelUnit": "dBm",
         "RevisitTime": 10,
-        "IntegrationFactor": 1,
-        "instrIntegrationTime": []
+        "IntegrationFactor": 1
       },
       {
         "ThreadID": 11,
@@ -166,8 +156,7 @@
         "Detector": "Average/RMS",
         "LevelUnit": "dBm",
         "RevisitTime": 10,
-        "IntegrationFactor": 1,
-        "instrIntegrationTime": []
+        "IntegrationFactor": 1
       },
       {
         "ThreadID": 12,
@@ -181,8 +170,7 @@
         "Detector": "Average/RMS",
         "LevelUnit": "dBm",
         "RevisitTime": 10,
-        "IntegrationFactor": 1,
-        "instrIntegrationTime": []
+        "IntegrationFactor": 1
       },
       {
         "ThreadID": 13,
@@ -196,8 +184,7 @@
         "Detector": "Average/RMS",
         "LevelUnit": "dBm",
         "RevisitTime": 10,
-        "IntegrationFactor": 1,
-        "instrIntegrationTime": []
+        "IntegrationFactor": 1
       },
       {
         "ThreadID": 14,
@@ -211,8 +198,7 @@
         "Detector": "Average/RMS",
         "LevelUnit": "dBm",
         "RevisitTime": 10,
-        "IntegrationFactor": 1,
-        "instrIntegrationTime": []
+        "IntegrationFactor": 1
       }
     ]
   },
@@ -229,12 +215,11 @@
         "StepWidth": 5000,
         "Resolution": 30000,
         "RFMode": "Low Distortion",
-        "TraceMode": "ClearWrite",
+        "TraceMode": "MaxHold",
         "Detector": "Sample",
         "LevelUnit": "dBm",
         "RevisitTime": 0.1,
-        "IntegrationFactor": 1,
-        "instrIntegrationTime": []
+        "IntegrationFactor": 10
       },
       {
         "ThreadID": 2,
@@ -244,12 +229,11 @@
         "StepWidth": 12500,
         "Resolution": 30000,
         "RFMode": "Normal",
-        "TraceMode": "ClearWrite",
+        "TraceMode": "Average",
         "Detector": "Average/RMS",
         "LevelUnit": "dBm",
         "RevisitTime": 1,
-        "IntegrationFactor": 1,
-        "instrIntegrationTime": []
+        "IntegrationFactor": 5
       },
       {
         "ThreadID": 3,
@@ -263,8 +247,7 @@
         "Detector": "Positive Peak",
         "LevelUnit": "dBm",
         "RevisitTime": 3,
-        "IntegrationFactor": 1,
-        "instrIntegrationTime": []
+        "IntegrationFactor": 1
       }
     ]
   },
@@ -280,11 +263,11 @@
       "StepWidth": 50000,
       "Resolution": 100000,
       "RFMode": "High Sensitivity",
-      "TraceMode": "ClearWrite",
+      "TraceMode": "Average",
       "Detector": "Sample",
       "LevelUnit": "dBμV",
       "RevisitTime": 0.1,
-      "IntegrationFactor": 1,
+      "IntegrationFactor": 10,
       "instrIntegrationTime": []
     }
   }
