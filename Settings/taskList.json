@@ -267,8 +267,7 @@
       "Detector": "Sample",
       "LevelUnit": "dBμV",
       "RevisitTime": 0.1,
-      "IntegrationFactor": 2,
-      "instrIntegrationTime": []
+      "IntegrationFactor": 2
     }
   }
 ]
