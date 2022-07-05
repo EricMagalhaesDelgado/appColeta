@@ -3,19 +3,36 @@
 </winMain_General>
 
 
-<winMain_connect>
-<font style="font-size:12;">O modo "<b>CONECTIVIDADE(S)</b>" possibilita a ...</font>
-</winMain_connect>
-
-
 <winMain_task>
-<font style="font-size:12;">O modo "<b>TASK</b>" possibilita a ...</font>
+<font style="font-size:12;">O modo "<b>TAREFA SCPI</b>" possibilita o controle de diversos tipos de instrumentos - analisador de espectro, receptor e GPS, em especial -, registrando em arquivos monitorações do espectro de radiofrequências.
+
+<b>• Tarefa plot (referenciada como WPT - <i>Waterfall Plot Task</i>)</b>
+Trata-se de tarefa que possibilita uma visualização rápida das faixas de frequêcias inclusas em um <i>script</i>, podendo ser feito o registro em arquivo apenas da faixa selecionada. Essa tarefa consiste no controle do analisador de espectro ou receptor no modo "melhor esforço", não tendo influência o tempo de revisita estabelecido no <i>script</i> ou o gatilho para escrita em arquivo (rompimento de máscara espectral, por exemplo). Por fim, essa tarefa não viabiliza reconexão com o instrumento, caso ocorra perda momentânea da conectividade.
+
+<b>• Tarefa regular (referenciada como RT - <i>Regular Task</i>)</b>
+Trata-se de tarefa que possibilita o registro em arquivo das faixa de frequência inclusas em um <i>script</i>, podendo ser definido um gatilho para escrita em arquivo (rompimento de máscara espectral, por exemplo). Essa tarefa consiste no controle do analisador de espectro ou receptor no modo "melhor esforço", buscando atender o tempo de revisita estabelecido no <i>script</i> e, também, fazendo a gestão da tarefa, o que envolve registro em LOG e tentatividade de reconexão com o instrumento, caso necessário.
+</font>
 </winMain_task>
 
 
 <winMain_logger>
-<font style="font-size:12;">O modo "<b>LOGGER</b>" possibilita a ...</font>
+<font style="font-size:12;">O modo "<b>TAREFA LOGGER</b>" possibilita a leitura de fluxo UDP gerado pelo Logger, caso habilitado no <i>script</i>.
+
+<b>• Registro em arquivo</b>
+Essa funcionalidade possibilita o registro em arquivo no formato CRFS Bin de gravações conduzidas no Logger, controlando um RFeye Node 20-6. 
+
+Útil quando o <i>script</i> estabelece um tempo de escrita em arquivo muito superior ao tempo de revisita (e disponibilização dessa informação pelo fluxo UDP, por exemplo) ou quando não é feito registro em arquivo, sendo a monitoração apenas disponibilizada por meio do fluxo UDP.
+
+<b>• Máscara espectral</b>
+Essa funcionalidade possibilita a visualização da máscara espectral sobreposta àquilo que esta sendo capturado da faixa de frequência selecionada, trazendo subsídios para o processo de ajuste da máscara.</font>
 </winMain_logger>
+
+
+<winMain_misc>
+<font style="font-size:12;">O modo "<b>MISCELÂNEAS</b>" possibilitará a realização de atividades específicas, como a aferição de parâmetros técnicos de emissões, por exemplo.
+
+As primeiras funcionalidades deste modo deverão ser disponibilizadas até o final do ano de 2022.</font>
+</winMain_misc>
 
 
 <winRFeyeEdit>
