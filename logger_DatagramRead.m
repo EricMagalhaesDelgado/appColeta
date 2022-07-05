@@ -16,13 +16,13 @@ end
 
 function GPS = Fcn_GPSRead(Datagram)
 
-    Date_Day     = Datagram(33);
-    Date_Month   = Datagram(34);
-    Date_Year    = Datagram(35) + 2000;
+    Date_Day     = double(Datagram(33));
+    Date_Month   = double(Datagram(34));
+    Date_Year    = double(Datagram(35)) + 2000;
 
-    Time_Hours   = Datagram(37);
-    Time_Minutes = Datagram(38);
-    Time_Seconds = Datagram(39);
+    Time_Hours   = double(Datagram(37));
+    Time_Minutes = double(Datagram(38));
+    Time_Seconds = double(Datagram(39));
     
     GPS.TimeStamp        = datestr(datetime([Date_Year, Date_Month, Date_Day, Time_Hours, Time_Minutes, Time_Seconds]), 'dd/mm/yyyy HH:MM:ss');
     GPS.Status           = Datagram(41);
@@ -37,13 +37,13 @@ end
 
 function outInfo = Fcn_TextRead(Datagram)
 
-    Date_Day     = Datagram(21);
-    Date_Month   = Datagram(22);
-    Date_Year    = Datagram(23) + 2000;
+    Date_Day     = double(Datagram(21));
+    Date_Month   = double(Datagram(22));
+    Date_Year    = double(Datagram(23)) + 2000;
 
-    Time_Hours   = Datagram(25);
-    Time_Minutes = Datagram(26);
-    Time_Seconds = Datagram(27);
+    Time_Hours   = double(Datagram(25));
+    Time_Minutes = double(Datagram(26));
+    Time_Seconds = double(Datagram(27));
     TimeStamp    = datestr(datetime([Date_Year, Date_Month, Date_Day, Time_Hours, Time_Minutes, Time_Seconds]), 'dd/mm/yyyy HH:MM:ss');
 
     Identifier     = deblank(char(Datagram(41:72)));
