@@ -35,6 +35,13 @@ As primeiras funcionalidades deste modo deverão ser disponibilizadas até o fin
 </winMain_misc>
 
 
+<winTaskEdit>
+<font style="font-size:12;">A funcionalidade PARAMETRIZAÇÃO TAREFA SCPI possibilita a criação/edição de <i>scripts</i> de tarefas regulares.
+
+Qualquer alteração nas tarefas - inclusão, edição ou exclusão - já terá impacto na atual sessão do appColeta.</font>
+</winTaskEdit>
+
+
 <winRFeyeEdit>
 <font style="font-size:12;">A funcionalidade...</font>
 </winRFeyeEdit>
