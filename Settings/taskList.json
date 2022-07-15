@@ -1,7 +1,79 @@
 [
   {
+    "Name": "appColeta HOM_1",
+    "BitsPerSample": 8,
+    "Duration": 600,
+    "Band": [
+      {
+        "ThreadID": 1,
+        "Description": "Faixa 1 de 3",
+        "FreqStart": 7.6E+7,
+        "FreqStop": 1.08E+8,
+        "StepWidth": 5000,
+        "Resolution": 30000,
+        "RFMode": "Low Distortion",
+        "TraceMode": "MaxHold",
+        "Detector": "Sample",
+        "LevelUnit": "dBm",
+        "RevisitTime": 0.1,
+        "IntegrationFactor": 10,
+        "Enable": 1
+      },
+      {
+        "ThreadID": 2,
+        "Description": "Faixa 2 de 3",
+        "FreqStart": 1.08E+8,
+        "FreqStop": 1.37E+8,
+        "StepWidth": 12500,
+        "Resolution": 30000,
+        "RFMode": "Normal",
+        "TraceMode": "Average",
+        "Detector": "Average/RMS",
+        "LevelUnit": "dBm",
+        "RevisitTime": 1,
+        "IntegrationFactor": 5,
+        "Enable": 1
+      },
+      {
+        "ThreadID": 3,
+        "Description": "Faixa 3 de 3",
+        "FreqStart": 4.5E+8,
+        "FreqStop": 4.7E+8,
+        "StepWidth": 100000,
+        "Resolution": 100000,
+        "RFMode": "High Sensitivity",
+        "TraceMode": "ClearWrite",
+        "Detector": "Positive Peak",
+        "LevelUnit": "dBm",
+        "RevisitTime": 0.5,
+        "IntegrationFactor": 1,
+        "Enable": 1
+      }
+    ]
+  },
+  {
+    "Name": "appColeta HOM_2",
+    "BitsPerSample": 16,
+    "Duration": 300,
+    "Band": {
+      "ThreadID": 1,
+      "Description": "Faixa 1 de 1",
+      "FreqStart": 7.6E+7,
+      "FreqStop": 1.08E+8,
+      "StepWidth": 50000,
+      "Resolution": 100000,
+      "RFMode": "High Sensitivity",
+      "TraceMode": "Average",
+      "Detector": "Sample",
+      "LevelUnit": "dBμV",
+      "RevisitTime": 0.1,
+      "IntegrationFactor": 2,
+      "Enable": 1
+    }
+  },
+  {
     "Name": "PRD/PMEC 2021",
-    "BitsPerSample": 32,
+    "BitsPerSample": 8,
     "Duration": 3605,
     "Band": [
       {
@@ -17,7 +89,7 @@
         "LevelUnit": "dBμV",
         "RevisitTime": 10,
         "IntegrationFactor": 10,
-        "Enable": 1
+        "Enable": 0
       },
       {
         "ThreadID": 2,
@@ -92,7 +164,7 @@
         "LevelUnit": "dBm",
         "RevisitTime": 10,
         "IntegrationFactor": 1,
-        "Enable": 1
+        "Enable": 0
       },
       {
         "ThreadID": 7,
@@ -107,7 +179,7 @@
         "LevelUnit": "dBm",
         "RevisitTime": 10,
         "IntegrationFactor": 1,
-        "Enable": 1
+        "Enable": 0
       },
       {
         "ThreadID": 8,
@@ -122,7 +194,7 @@
         "LevelUnit": "dBm",
         "RevisitTime": 10,
         "IntegrationFactor": 1,
-        "Enable": 1
+        "Enable": 0
       },
       {
         "ThreadID": 9,
@@ -137,7 +209,7 @@
         "LevelUnit": "dBm",
         "RevisitTime": 10,
         "IntegrationFactor": 1,
-        "Enable": 1
+        "Enable": 0
       },
       {
         "ThreadID": 10,
@@ -213,115 +285,6 @@
         "RevisitTime": 10,
         "IntegrationFactor": 1,
         "Enable": 0
-      }
-    ]
-  },
-  {
-    "Name": "appColeta HOM_1",
-    "BitsPerSample": 16,
-    "Duration": 600,
-    "Band": [
-      {
-        "ThreadID": 1,
-        "Description": "Faixa 1 de 3",
-        "FreqStart": 7.6E+7,
-        "FreqStop": 1.08E+8,
-        "StepWidth": 5000,
-        "Resolution": 30000,
-        "RFMode": "Low Distortion",
-        "TraceMode": "MaxHold",
-        "Detector": "Sample",
-        "LevelUnit": "dBm",
-        "RevisitTime": 0.1,
-        "IntegrationFactor": 10,
-        "Enable": 1
-      },
-      {
-        "ThreadID": 2,
-        "Description": "Faixa 2 de 3",
-        "FreqStart": 1.08E+8,
-        "FreqStop": 1.37E+8,
-        "StepWidth": 12500,
-        "Resolution": 30000,
-        "RFMode": "Normal",
-        "TraceMode": "Average",
-        "Detector": "Average/RMS",
-        "LevelUnit": "dBm",
-        "RevisitTime": 1,
-        "IntegrationFactor": 5,
-        "Enable": 1
-      },
-      {
-        "ThreadID": 3,
-        "Description": "Faixa 3 de 3",
-        "FreqStart": 4.5E+8,
-        "FreqStop": 4.7E+8,
-        "StepWidth": 100000,
-        "Resolution": 100000,
-        "RFMode": "High Sensitivity",
-        "TraceMode": "ClearWrite",
-        "Detector": "Positive Peak",
-        "LevelUnit": "dBm",
-        "RevisitTime": 3,
-        "IntegrationFactor": 1,
-        "Enable": 1
-      }
-    ]
-  },
-  {
-    "Name": "appColeta HOM_2",
-    "BitsPerSample": 32,
-    "Duration": 300,
-    "Band": {
-      "ThreadID": 1,
-      "Description": "Faixa 1 de 1",
-      "FreqStart": 7.6E+7,
-      "FreqStop": 1.08E+8,
-      "StepWidth": 50000,
-      "Resolution": 100000,
-      "RFMode": "High Sensitivity",
-      "TraceMode": "Average",
-      "Detector": "Sample",
-      "LevelUnit": "dBμV",
-      "RevisitTime": 0.1,
-      "IntegrationFactor": 2,
-      "Enable": 1
-    }
-  },
-  {
-    "Name": "appColeta HOM_3",
-    "BitsPerSample": 8,
-    "Duration": 600,
-    "Band": [
-      {
-        "ThreadID": 1,
-        "Description": "Faixa 1 de 2",
-        "FreqStart": 8.0E+7,
-        "FreqStop": 1.08E+8,
-        "StepWidth": 50000,
-        "Resolution": 100000,
-        "RFMode": "Normal",
-        "TraceMode": "ClearWrite",
-        "Detector": "Average/RMS",
-        "LevelUnit": "dBm",
-        "RevisitTime": 1,
-        "IntegrationFactor": 1,
-        "Enable": 1
-      },
-      {
-        "ThreadID": 2,
-        "Description": "Faixa 2 de 2",
-        "FreqStart": 1.08E+8,
-        "FreqStop": 1.37E+8,
-        "StepWidth": 12500,
-        "Resolution": 30000,
-        "RFMode": "Normal",
-        "TraceMode": "ClearWrite",
-        "Detector": "Average/RMS",
-        "LevelUnit": "dBm",
-        "RevisitTime": 1,
-        "IntegrationFactor": 1,
-        "Enable": 1
       }
     ]
   }

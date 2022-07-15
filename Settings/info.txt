@@ -42,6 +42,11 @@ Qualquer alteração nas tarefas - inclusão, edição ou exclusão - já terá 
 </winTaskEdit>
 
 
+<winScpiEdit>
+<font style="font-size:12;">A funcionalidade ANALISADOR DE ESPECTRO, RECEPTOR E GPS possibilita a criação/edição de objetos que representam instrumentos, testando a sua conectividade.</font>
+</winScpiEdit>
+
+
 <winRFeyeEdit>
 <font style="font-size:12;">A funcionalidade...</font>
 </winRFeyeEdit>

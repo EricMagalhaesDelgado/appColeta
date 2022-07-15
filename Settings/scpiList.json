@@ -4,97 +4,37 @@
     "Name": "GPS Garmin GPSmap 62sc",
     "Tag": "GPS",
     "Type": "Serial",
-    "IP": "",
-    "Port": "COM13",
-    "Timeout": 5,
-    "Description": "",
-    "Localhost_ConnectFlag": 0,
-    "Localhost_localIP": "",
-    "Localhost_publicIP": "",
-    "ConnectFlag": 1
+    "Parameters": {
+      "Port": "COM1",
+      "Timeout": 5
+    },
+    "Description": "GPS Garmin",
+    "Enable": 1
   },
   {
     "Family": "GPS",
     "Name": "GPS Smartphone",
     "Tag": "GPS",
     "Type": "TCPIP Socket",
-    "IP": "192.168.1.86",
-    "Port": "11123",
-    "Timeout": 5,
+    "Parameters": {
+      "IP": "192.168.10.30",
+      "Port": "1100",
+      "Timeout": 5
+    },
     "Description": "GPS2IP (iOS)",
-    "Localhost_ConnectFlag": 0,
-    "Localhost_localIP": "",
-    "Localhost_publicIP": "",
-    "ConnectFlag": 1
-  },
-  {
-    "Family": "Receptor",
-    "Name": "Keysight N9936B",
-    "Tag": "N9936B",
-    "Type": "TCPIP Socket",
-    "IP": "192.168.30.36",
-    "Port": "5025",
-    "Timeout": 5,
-    "Description": "",
-    "Localhost_ConnectFlag": 0,
-    "Localhost_localIP": "",
-    "Localhost_publicIP": "",
-    "ConnectFlag": 1
-  },
-  {
-    "Family": "Receptor",
-    "Name": "Rohde & Schwarz EB500",
-    "Tag": "EB500",
-    "Type": "TCP/UDP IP Socket",
-    "IP": "200.151.118.43",
-    "Port": "5555",
-    "Timeout": 10,
-    "Description": "",
-    "Localhost_ConnectFlag": 0,
-    "Localhost_localIP": "",
-    "Localhost_publicIP": "",
-    "ConnectFlag": 1
-  },
-  {
-    "Family": "Receptor",
-    "Name": "Rohde & Schwarz FSL",
-    "Tag": "FSL",
-    "Type": "TCPIP Socket",
-    "IP": "127.0.0.1",
-    "Port": "34835",
-    "Timeout": 5,
-    "Description": "",
-    "Localhost_ConnectFlag": 0,
-    "Localhost_localIP": "",
-    "Localhost_publicIP": "",
-    "ConnectFlag": 1
+    "Enable": 1
   },
   {
     "Family": "Receptor",
     "Name": "Tektronix SA2500",
     "Tag": "SA2500",
     "Type": "TCPIP Socket",
-    "IP": "127.0.0.1",
-    "Port": "34835",
-    "Timeout": 10,
+    "Parameters": {
+      "IP": "127.0.0.1",
+      "Port": "34835",
+      "Timeout": 5
+    },
     "Description": "Modo servidor/cliente. Loopback (127.0.0.1).",
-    "Localhost_ConnectFlag": 0,
-    "Localhost_localIP": "",
-    "Localhost_publicIP": "",
-    "ConnectFlag": 1
-  },
-  {
-    "Family": "Receptor",
-    "Name": "Tektronix SA2500",
-    "Tag": "SA2500",
-    "Type": "TCPIP Socket",
-    "IP": "127.0.0.1",
-    "Port": "34836",
-    "Timeout": 10,
-    "Description": "",
-    "Localhost_ConnectFlag": 0,
-    "Localhost_localIP": "",
-    "Localhost_publicIP": "",
-    "ConnectFlag": 1
+    "Enable": 1
   }
 ]
