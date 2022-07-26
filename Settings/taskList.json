@@ -32,7 +32,7 @@
         "LevelUnit": "dBm",
         "RevisitTime": 1,
         "IntegrationFactor": 5,
-        "Enable": 1
+        "Enable": 0
       },
       {
         "ThreadID": 3,

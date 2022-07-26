@@ -9,7 +9,7 @@
       "Timeout": 5
     },
     "Description": "GPS Garmin",
-    "Enable": 1
+    "Enable": 0
   },
   {
     "Family": "GPS",
@@ -35,6 +35,19 @@
       "Timeout": 5
     },
     "Description": "Modo servidor/cliente. Loopback (127.0.0.1).",
+    "Enable": 1
+  },
+  {
+    "Family": "Receptor",
+    "Name": "Rohde & Schwarz FSL",
+    "Tag": "GPS",
+    "Type": "TCPIP Socket",
+    "Parameters": {
+      "IP": "192.168.10.30",
+      "Port": "5025",
+      "Timeout": 5
+    },
+    "Description": "FSL-6 (10k - 6 GHz)",
     "Enable": 1
   }
 ]
