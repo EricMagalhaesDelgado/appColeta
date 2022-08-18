@@ -8,6 +8,10 @@ function [taskList, msg] = OpenFile_taskList(FilePath, RootFolder)
         for ii = 1:numel(taskTemp)
             taskList{ii} = taskTemp(ii);
 
+            if isempty(taskList{ii}.Duration)
+                taskList{ii}.Duration = inf;
+            end
+
             if ~any([taskList{ii}.Band.Enable])
                 taskList{ii}.Band(1).Enable = 1;
                 msg = sprintf('Corrigida informação do arquivo com relação de tarefas, de forma que cada tarefa possua ao mesmo uma faixa de frequência com o estado "ON".');
@@ -18,7 +22,7 @@ function [taskList, msg] = OpenFile_taskList(FilePath, RootFolder)
         msg = getReport(ME);
 
         if strcmp(FilePath, fullfile(RootFolder, 'Settings', 'taskList.json'))
-            msg = sprintf('<b>Como o arquivo "taskList.json" está corrompido, criou-se o registro de uma tarefa.</b>\n\n%s', msg);
+            msg = sprintf('Como o arquivo <b>taskList.json</b> está corrompido, criou-se o registro de uma tarefa.\n\n%s', msg);
             
             taskList = {struct('Name', 'appColeta HOM_1', 'BitsPerSample', 8, 'Duration', 600, ...
                                'Band', struct('ThreadID',         1,              ...

@@ -39,7 +39,7 @@ function [scpiList, msg] = OpenFile_scpiList(FilePath, RootFolder)
 
             scpiList(end+1,:) = {1, 'Receptor', 'Tektronix SA2500', 'SA2500', 'TCPIP Socket', '{"IP":"127.0.0.1","Port":"34835","Timeout":5}', 'Modo servidor/cliente. Loopback (127.0.0.1).', 1, ''};
 
-            msg = sprintf('<b>Como o arquivo "scpiList.json" está corrompido, criou-se o registro do instrumento virtual da Tektronix, o SA2500, cujo uso depende de prévia instalação do <i>app</i> "SA2500PC".</b>\n\n%s', msg);
+            msg = sprintf('Como o arquivo <b>scpiList.json</b> está corrompido, criou-se o registro do instrumento virtual da Tektronix, o SA2500, cujo uso depende de prévia instalação do <i>app</i> "SA2500PC".\n\n%s', msg);
         end
     end
 

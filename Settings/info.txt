@@ -48,7 +48,7 @@ Qualquer alteração nas tarefas - inclusão, edição ou exclusão - já terá 
 
 
 <winRFeyeEdit>
-<font style="font-size:12;">A funcionalidade...</font>
+<font style="font-size:12;">A funcionalidade RFEYE NODE 20-6 possibilita a edição de parâmetros relacionados aos sensores RFeye, testando a sua conectividade.</font>
 </winRFeyeEdit>
 
 
