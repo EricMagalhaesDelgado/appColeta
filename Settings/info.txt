@@ -52,6 +52,11 @@ Qualquer alteração nas tarefas - inclusão, edição ou exclusão - já terá 
 </winRFeyeEdit>
 
 
+<winMonitor>
+<font style="font-size:12;">A funcionalidade MONITOR LOGGER + possibilita a análise de emissões desmascaradas e persistentes.</font>
+</winMonitor>
+
+
 <winSettings>
 <font style="font-size:12;">A funcionalidade "CONFIGURAÇÕES" possibilita o ajuste de diversos parâmetros do appColeta, além de atualização de módulos que os suportam, como a biblioteca <b>fiscaliza</b> e a base de dados <b>anateldb</b>.</font>
 </winSettings>
