@@ -6,6 +6,7 @@ function scpiNode = connect_scpi(instrSelected, instrInfo, Band)
         Band          struct = []
     end
 
+    Type = instrSelected.Type;
     IP   = instrSelected.IP;
     Port = instrSelected.Port;
 
@@ -25,7 +26,13 @@ function scpiNode = connect_scpi(instrSelected, instrInfo, Band)
     else;                                     SyncType = 'Single Sweep';
     end
 
-    scpiNode = tcpip(IP, Port);
+    switch Type
+        case {'TCPIP Socket', 'TCP/UDP IP Socket'}
+            scpiNode = tcpip(IP, Port);
+        case 'TCPIP Visa'
+            scpiNode = visa("ni", "TCPIP::" + string(IP) + "::INSTR");
+    end
+
     set(scpiNode, 'Timeout', Timeout, 'InputBufferSize', 10*1e+6, 'ByteOrder', 'littleEndian');
     fopen(scpiNode);
 

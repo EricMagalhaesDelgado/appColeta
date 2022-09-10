@@ -2,7 +2,6 @@
   {
     "Family": "GPS",
     "Name": "GPS Garmin GPSmap 62sc",
-    "Tag": "GPS",
     "Type": "Serial",
     "Parameters": {
       "Port": "COM1",
@@ -14,7 +13,6 @@
   {
     "Family": "GPS",
     "Name": "GPS Smartphone",
-    "Tag": "GPS",
     "Type": "TCPIP Socket",
     "Parameters": {
       "IP": "192.168.10.30",
@@ -22,12 +20,11 @@
       "Timeout": 5
     },
     "Description": "GPS2IP (iOS)",
-    "Enable": 1
+    "Enable": 0
   },
   {
     "Family": "Receptor",
     "Name": "Tektronix SA2500",
-    "Tag": "SA2500",
     "Type": "TCPIP Socket",
     "Parameters": {
       "IP": "127.0.0.1",
@@ -40,7 +37,6 @@
   {
     "Family": "Receptor",
     "Name": "Rohde & Schwarz FSL",
-    "Tag": "GPS",
     "Type": "TCPIP Socket",
     "Parameters": {
       "IP": "192.168.10.30",
@@ -48,6 +44,41 @@
       "Timeout": 5
     },
     "Description": "FSL-6 (10k - 6 GHz)",
+    "Enable": 0
+  },
+  {
+    "Family": "Receptor",
+    "Name": "Rohde & Schwarz FSW",
+    "Type": "TCPIP Visa",
+    "Parameters": {
+      "IP": "10.21.204.212",
+      "Timeout": 5
+    },
+    "Description": "EMSAT",
     "Enable": 1
+  },
+  {
+    "Family": "Receptor",
+    "Name": "Rohde & Schwarz FSW",
+    "Type": "TCPIP Socket",
+    "Parameters": {
+      "IP": "10.21.204.212",
+      "Port": "5025",
+      "Timeout": 5
+    },
+    "Description": "EMSAT",
+    "Enable": 1
+  },
+  {
+    "Family": "Receptor",
+    "Name": "Anritsu MS2720T",
+    "Type": "TCPIP Socket",
+    "Parameters": {
+      "IP": "1.1.1.1",
+      "Port": "9001",
+      "Timeout": 5
+    },
+    "Description": "GPS Garmin",
+    "Enable": 0
   }
 ]
