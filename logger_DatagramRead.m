@@ -48,6 +48,8 @@ function outInfo = Fcn_TextRead(Datagram)
 
     Identifier     = deblank(char(Datagram(41:72)));
     FreeTextLength = double(typecast(uint8(Datagram(73:76)), 'uint32'));
+    FreeText       = '';
+
     if FreeTextLength
         FreeText = deblank(char(Datagram(77:76+FreeTextLength)));
     end

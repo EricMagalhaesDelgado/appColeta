@@ -39,6 +39,9 @@ function scpiNode = connect_scpi(instrSelected, instrInfo, Band)
     scpiNode.UserData = struct('IDN', replace(deblank(query(scpiNode, '*IDN?')), '"', ''));
     
     if ConnectType == "Task"
+        Localhost_localIP  = instrSelected.Localhost_localIP;
+        Localhost_publicIP = instrSelected.Localhost_publicIP;
+
         idx = find(strcmp(instrInfo.Name, instrSelected.Name), 1);
         if ResetCmd == "On"
             fprintf(scpiNode, instrInfo.scpiReset{idx});
@@ -54,11 +57,10 @@ function scpiNode = connect_scpi(instrSelected, instrInfo, Band)
             case 'Continuous Sweep'
                 fprintf(scpiNode, 'INITiate:CONTinuous ON');
         end
-        
-        if ~strcmp(IP, '127.0.0.1')
-            [~, scpiNode.UserData.ClientIP] = connect_IPsFind(IP);
-        else
-            scpiNode.UserData.ClientIP = 'Loopback IP';
+    
+        if     ~isempty(Localhost_publicIP); scpiNode.UserData.ClientIP      = Localhost_publicIP;
+        elseif ~isempty(Localhost_localIP);  scpiNode.UserData.ClientIP      = Localhost_localIP;
+        elseif ~strcmp(IP, '127.0.0.1');     [~, scpiNode.UserData.ClientIP] = connect_IPsFind(IP);
         end
 
         scpiNode.UserData.SpecInfo = table2struct(Task_MetaDataRead(scpiNode, instrInfo(idx,:), Band));

@@ -80,5 +80,35 @@
     },
     "Description": "GPS Garmin",
     "Enable": 0
+  },
+  {
+    "Family": "Receptor",
+    "Name": "Rohde & Schwarz EB500",
+    "Type": "TCP/UDP IP Socket",
+    "Parameters": {
+      "IP": "172.24.3.59",
+      "Port": "9085",
+      "Timeout": 10,
+      "Localhost_Enable": 1,
+      "Localhost_localIP": "192.168.104.40",
+      "Localhost_publicIP": "192.168.104.40"
+    },
+    "Description": "AoA",
+    "Enable": 1
+  },
+  {
+    "Family": "Receptor",
+    "Name": "Rohde & Schwarz EB500",
+    "Type": "TCP/UDP IP Socket",
+    "Parameters": {
+      "IP": "200.151.118.43",
+      "Port": "5555",
+      "Timeout": 5,
+      "Localhost_Enable": 0,
+      "Localhost_localIP": "",
+      "Localhost_publicIP": ""
+    },
+    "Description": "ETM Uberlândia/MG",
+    "Enable": 1
   }
 ]

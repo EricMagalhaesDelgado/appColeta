@@ -1,10 +1,22 @@
-[
-  {
+{
+  "Monitor": {
     "WebSheetPath": "",
-    "MaxDistance": 30,
-    "BrokenMsg": 10,
-    "ThreadIDList": [310, 330],
-    "THR1": 30,
-    "THR2": 0.25
+    "Bands": [
+      {
+        "FreqStart": 108000,
+        "FreqStop": 137000
+      }
+    ],
+    "GarbageMask": [
+      "mask_Channels.csv",
+      "mask_80dBm.csv"
+    ],
+    "Persistent": {
+      "ThreadIDList": [310, 320, 330],
+      "BrokenMsg": 2,
+      "ScansPerMinute": 60,
+      "THR1_Global": 5,
+      "THR2_OCC": 0.01
+    }
   }
-]
+}
