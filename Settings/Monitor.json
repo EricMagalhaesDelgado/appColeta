@@ -1,22 +1,21 @@
 {
-  "Monitor": {
-    "WebSheetPath": "",
-    "Bands": [
-      {
-        "FreqStart": 108000,
-        "FreqStop": 137000
-      }
-    ],
-    "GarbageMask": [
-      "mask_Channels.csv",
-      "mask_80dBm.csv"
-    ],
-    "Persistent": {
-      "ThreadIDList": [310, 320, 330],
-      "BrokenMsg": 2,
-      "ScansPerMinute": 60,
-      "THR1_Global": 5,
-      "THR2_OCC": 0.01
+  "WebSheetPath": "",
+  "Bands": [
+    {
+      "FreqStart": 108000,
+      "FreqStop": 137000
     }
+  ],
+  "Contour": 30,
+  "GarbageMask": [
+    "mask_Channels.csv",
+    "mask_80dBm.csv"
+  ],
+  "Persistent": {
+    "ThreadIDList": [310],
+    "BrokenMsg": 5,
+    "ScansPerMinute": 60,
+    "THR1_Global": 30,
+    "THR2_OCC": 0.10
   }
 }
