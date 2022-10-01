@@ -39,9 +39,15 @@ function scpiNode = connect_scpi(instrSelected, instrInfo, Band)
     scpiNode.UserData = struct('IDN', replace(deblank(query(scpiNode, '*IDN?')), '"', ''));
     
     if ConnectType == "Task"
-        Localhost_localIP  = instrSelected.Localhost_localIP;
-        Localhost_publicIP = instrSelected.Localhost_publicIP;
+        Localhost_localIP  = '';
+        Localhost_publicIP = '';
 
+        if isfield(instrSelected, 'Localhost_localIP');  Localhost_localIP  = instrSelected.Localhost_localIP;
+        end
+
+        if isfield(instrSelected, 'Localhost_publicIP'); Localhost_publicIP = instrSelected.Localhost_publicIP;
+        end
+        
         idx = find(strcmp(instrInfo.Name, instrSelected.Name), 1);
         if ResetCmd == "On"
             fprintf(scpiNode, instrInfo.scpiReset{idx});
