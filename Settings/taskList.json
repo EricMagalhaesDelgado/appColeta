@@ -1403,5 +1403,44 @@
         "Enable": 1
       }
     ]
+  },
+  {
+    "Name": "PMEC 2022 (Drive-test)",
+    "BitsPerSample": 8,
+    "Duration": 14400,
+    "Band": [
+      {
+        "ThreadID": 1,
+        "Description": "Faixa 1 de 2",
+        "FreqStart": 7.6E+7,
+        "FreqStop": 1.08E+8,
+        "StepWidth": 25000,
+        "Resolution": 30000,
+        "RFMode": "Normal",
+        "TraceMode": "Average",
+        "Detector": "Average/RMS",
+        "LevelUnit": "dBm",
+        "RevisitTime": 1,
+        "IntegrationFactor": 3,
+        "Trigger": 1,
+        "Enable": 1
+      },
+      {
+        "ThreadID": 2,
+        "Description": "Faixa 2 de 2",
+        "FreqStart": 1.08E+8,
+        "FreqStop": 1.37E+8,
+        "StepWidth": 5000,
+        "Resolution": 10000,
+        "RFMode": "Normal",
+        "TraceMode": "Average",
+        "Detector": "Average/RMS",
+        "LevelUnit": "dBm",
+        "RevisitTime": 1,
+        "IntegrationFactor": 3,
+        "Trigger": 1,
+        "Enable": 1
+      }
+    ]
   }
 ]
