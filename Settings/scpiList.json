@@ -8,7 +8,8 @@
       "Timeout": 5
     },
     "Description": "GPS Garmin",
-    "Enable": 0
+    "Enable": 0,
+    "LOG": ""
   },
   {
     "Family": "GPS",
@@ -20,7 +21,8 @@
       "Timeout": 5
     },
     "Description": "GPS2IP (iOS)",
-    "Enable": 0
+    "Enable": 0,
+    "LOG": ""
   },
   {
     "Family": "Receptor",
@@ -32,19 +34,30 @@
       "Timeout": 5
     },
     "Description": "Modo servidor/cliente. Loopback (127.0.0.1).",
-    "Enable": 1
+    "Enable": 1,
+    "LOG": [
+      "{",
+      "  \"time\": \"01/12/2022 10:35:43\",",
+      "  \"info\": \"Conectado ao <b>TEKTRONIX,SA2500PC,B000000,7.050</b>.\"",
+      "}"
+    ]
   },
   {
     "Family": "Receptor",
     "Name": "Rohde & Schwarz FSL",
-    "Type": "TCPIP Socket",
+    "Type": "TCPIP Visa",
     "Parameters": {
-      "IP": "192.168.10.30",
-      "Port": "5025",
+      "IP": "10.21.204.212",
       "Timeout": 5
     },
     "Description": "FSL-6 (10k - 6 GHz)",
-    "Enable": 0
+    "Enable": 0,
+    "LOG": [
+      "{",
+      "  \"time\": \"01/12/2022 10:36:27\",",
+      "  \"info\": \"Esperava-se instrumento da família <b>Rohde & Schwarz FSL</b>, mas identificado <b>Rohde&Schwarz,FSW-43,1331.5003K43/101365,4.30 SP1</b>.\"",
+      "}"
+    ]
   },
   {
     "Family": "Receptor",
@@ -55,7 +68,13 @@
       "Timeout": 5
     },
     "Description": "EMSAT",
-    "Enable": 1
+    "Enable": 1,
+    "LOG": [
+      "{",
+      "  \"time\": \"01/12/2022 10:36:51\",",
+      "  \"info\": \"Conectado ao <b>Rohde&Schwarz,FSW-43,1331.5003K43/101365,4.30 SP1</b>.\"",
+      "}"
+    ]
   },
   {
     "Family": "Receptor",
@@ -67,7 +86,13 @@
       "Timeout": 5
     },
     "Description": "EMSAT",
-    "Enable": 1
+    "Enable": 1,
+    "LOG": [
+      "{",
+      "  \"time\": \"01/12/2022 10:37:19\",",
+      "  \"info\": \"Unsuccessful open: Connection timed out: connect\"",
+      "}"
+    ]
   },
   {
     "Family": "Receptor",
@@ -79,7 +104,8 @@
       "Timeout": 5
     },
     "Description": "GPS Garmin",
-    "Enable": 0
+    "Enable": 0,
+    "LOG": ""
   },
   {
     "Family": "Receptor",
@@ -94,7 +120,8 @@
       "Localhost_publicIP": "192.168.104.40"
     },
     "Description": "AoA",
-    "Enable": 1
+    "Enable": 1,
+    "LOG": ""
   },
   {
     "Family": "Receptor",
@@ -109,6 +136,7 @@
       "Localhost_publicIP": ""
     },
     "Description": "ETM Uberlândia/MG",
-    "Enable": 1
+    "Enable": 1,
+    "LOG": ""
   }
 ]

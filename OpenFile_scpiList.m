@@ -8,7 +8,6 @@ function [scpiList, msg] = OpenFile_scpiList(FilePath, RootFolder)
         if ~isempty(fileList)
             for ii = 1:numel(fileList)
                 fileList(ii).Parameters = jsonencode(fileList(ii).Parameters);
-                fileList(ii).LOG        = '';
             end
 
             scpiList     = struct2table(fileList, 'AsArray', true);
