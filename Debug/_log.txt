@@ -1,0 +1,2 @@
+<LogEntry>
+<BeginTime>01/12/2022 11:00:45</BeginTime>
