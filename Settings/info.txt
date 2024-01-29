@@ -1,5 +1,7 @@
 <winMain_General>
-<font style="font-size:12;">Aplicação de coleta de dados gerados em monitorações desenvolvida no âmbito dos projetos 3A e RFlook - Processos nºs 53554.000939/2020-26 e 53500.063493/2020-76 - e evoluída no âmbito do Sentinela - Processo nº 53500.004826/2022-97.</font>
+<font style="font-size:12;">Aplicação de coleta de dados gerados em monitorações desenvolvida no âmbito dos projetos 3A e RFlook - Processos nºs 53554.000939/2020-26 e 53500.063493/2020-76 - e evoluída no âmbito do Sentinela - Processo nº 53500.004826/2022-97.
+
+O appColeta R2022a é a versão legada do <i>app</i>. A sua nova versão, agora chamado de <b>appColetaV2</b>, está sob a responsabilidade do <b>Escritório de inovação</b> da SFI.</font>
 </winMain_General>
 
 
